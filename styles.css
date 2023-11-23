@@ -1,0 +1,165 @@
+html {
+    box-sizing: border-box;
+    border: 50px solid #385dd4;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #f9cfd5;
+    color: #3663f8;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: large;
+    margin: 25px;
+    padding: 75px;
+}
+
+.header h1 {
+    color: #3663f8;
+    font-weight: bold;
+    font-size: 3em;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.about-me, .about-me-two p {
+    text-align: center;
+    max-width: 90%;
+    margin: 50px auto;
+    padding: 25px;
+    font-size: 1.5em;
+    color: #3c5dbf;
+}
+
+.natalia-text {
+    font-size: 60%; /* 20% smaller */
+    text-align: center; /* Center the text */
+}
+
+
+.divider {
+    border: 0;
+    height: 5px;
+    background: rgb(241, 241, 127);
+    margin-bottom: 0;
+}
+
+.content-containers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.content-left, .content-right {
+    flex: 1;
+    padding: 50px;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.content-left {
+    background-color: #fcc9d1;
+    color: #3663f8;
+}
+
+.content-right {
+    background-color: #3663f8;
+    color: white;
+}
+
+.image-container {
+    display: inline-block;
+    border: 3px solid #f87898;
+    padding: 10px;
+    background-color: rgb(255, 191, 16);
+}
+
+.image-container img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.tilted-image {
+    transform: rotate(-10deg);
+}
+
+.social-links-container {
+    background-color: #3663f8;
+    align-items: center;
+    padding: 50px 0;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+.social-links p {
+    color: white;
+    margin: 15px 0;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: none;
+}
+/* ...existing styles... */
+
+/* Cloud container styles */
+.cloud-container {
+    background-color: #c7a7d4; /* Light purple background color for the cloud */
+    color: #f8ee36; /* Text color */
+    width: 600px; /* Increased width of the cloud container */
+    height: 300px; /* Increased height of the cloud container */
+    border-radius: 150px; /* Adjusted rounded edges for the larger size */
+    margin: 50px auto; /* Increased top and bottom margin for spacing */
+    padding: 20px; /* Padding inside the container */
+    position: relative; /* Position relative for pseudo-elements */
+    display: flex; /* Using flexbox for internal content alignment */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    text-align: center; /* Center text alignment for the content */
+    font-size:x-large; /* Adjust the font size as needed */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.15), /* Outer shadow for depth */
+                inset 0px 5px 10px rgba(255, 255, 255, 0.3), /* Inner lighter shadow for a fluffy effect */
+                inset 0px -5px 10px rgba(0, 0, 0, 0.1); /* Inner darker shadow for depth */
+}
+
+/* Pseudo-elements for extra puffs */
+.cloud-container::before, .cloud-container::after {
+    content: '';
+    background-color: #c7a7d4; /* Light purple background color for the puffs */
+    border-radius: 150px; /* Fully rounded edges for the puffs */
+    position: absolute; /* Absolute position */
+    width: 200px; /* Width of the puff */
+    height: 200px; /* Height of the puff */
+}
+
+.cloud-container::before {
+    top: -100px; /* Positioning */
+    left: 100px; /* Positioning */
+}
+
+.cloud-container::after {
+    top: -100px; /* Positioning */
+    right: 100px; /* Positioning */
+}
+
+/* ...rest of the existing styles... */
+
+
+
+
+
+
+
+
+
+
