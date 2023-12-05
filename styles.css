@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #5e594e;
+    background-color: #faf5eb;
+    font-size: 20px; 
+}
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+.welcome-container {
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.welcome-container:hover {
+    animation: blink-hover 1.8s infinite;
+}
+
+@keyframes blink-hover {
+    50% {
+        opacity: 0.2;
+        color: rgb(52, 106, 255); /* Change the color to pink or any desired color */
+    }
+}
+
+
+
+header {
+    background: linear-gradient(rgba(220, 200, 255, 0.8), rgba(220, 200, 255, 0));
+    padding: 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box; /* Add this line */
+}
+
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: linear-gradient(rgba(232, 221, 251, 0.8), rgba(220, 200, 255, 0));
+    padding: 20px;
+    gap: 100px; 
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+}
+
+.menu-list li {
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #b3c0f1;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #3b3655;
+}
+
+section {
+    padding: 50px 20px;
+    margin-top: 120px;
+    text-align: left;
+}
+
+section h2 {
+    font-size: 50px;
+    text-align: left;
+   
+}
+
+.hide-on-scroll {
+    opacity: 1;
+}
+
+
+
+.news-section {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px; 
+}
+
+.news-block {
+    width: 50%;
+    float: left;
+    background-color: #ffc0cb;
+    padding: 40px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+.news-list {
+    list-style: none;
+    padding: 0;
+}
+
+.news-list li {
+    margin: 0;
+}
+
+.text-content {
+    width: 50%;
+   padding: 2%;
+}
+.image-paragraph {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px; 
+}
+
+.image-paragraph img {
+    width: 30%;
+    height: 500px; 
+    object-position: 100%;
+    border: 8px solid #ffc0cb;
+}
+.footer-container {
+    background-color: #FAF5EB; 
+    padding: 10px; 
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Adjust the width to your preferred size */
+    height: auto; /* Maintain aspect ratio */
+
+}
+
+form.custom-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #071d7ee4; 
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #2c3ea4; /* Light purple border */
+    border-radius: 4px;
+    background-color: rgba(239, 187, 67, 0.1); /* Transparent light purple background */
+    color: #90756d; /* Light purple text color */
+}
+
+button {
+    background-color: #92a7f9;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #cca6eed8; /* Darker purple on hover */
+}
+main {
+    margin-top: 120px; /* Adjust this value based on your fixed header height */
+}
+.workwithme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh; /* Adjust the height based on your preference */
+}
+
+.workwithme img {
+    width: 100%; /* Adjust the width based on your preference */
+    height: auto;
+    max-height: 100vh; /* Adjust the max-height based on your preference */
+    object-fit: contain;
+    padding: 50%;
+}
+.thank-you {
+    text-align: center;
+}
+.about-section {
+    display: flex;
+    gap: 0px;
+    margin-top: 0px; /* Adjust this value to reduce the gap */
+}
+
+.about-block {
+    width: 40%;
+    float: left;
+    padding: 0%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+.about-list {
+    list-style: none;
+    padding: 5%;
+}
+.about-content img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
